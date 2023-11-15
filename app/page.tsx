@@ -1,6 +1,8 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import { fetchAndInsertJoke } from './Utils/chunckNorrisApi';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 interface JokeCardProps {
   joke: string;
@@ -18,9 +20,9 @@ const JokeCard: React.FC<JokeCardProps> = ({ joke }) => {
   );
 };
 
-const Footer: React.FC<FooterProps> = ({ visitCount }) => {
-  return <footer className="text-center p-4">Visitors: {visitCount}</footer>;
-};
+// const Footer: React.FC<FooterProps> = ({ visitCount }) => {
+//   return <footer className="text-center p-4">Visitors: {visitCount}</footer>;
+// };
 
 const Home: React.FC = () => {
   const [joke, setJoke] = useState<string>('');
@@ -44,7 +46,8 @@ const Home: React.FC = () => {
 
   return (
     <div className="container mx-auto my-8">
-      <h1 className="text-4xl font-bold mb-4">Chuck Norris Jokes</h1>
+      <Header />
+      {/* <h1 className="text-4xl font-bold mb-4">Chuck Norris Jokes</h1> */}
       <JokeCard joke={joke} />
       <button onClick={handleGetAnotherJoke} className="mt-4 p-2 bg-blue-500 text-white rounded-md">
         Get Another Joke
