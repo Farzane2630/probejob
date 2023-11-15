@@ -1,0 +1,21 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "./generated/client"
+}
+
+model Joke {
+  id       String  @id @map("_id")
+  iconUrl  String
+  url      String?
+  value    String
+}
+
+model Visit {
+  id        Int      @id @default(autoincrement())
+  timestamp DateTime @default(now())
+}
