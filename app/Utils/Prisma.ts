@@ -1,4 +1,5 @@
-import { PrismaClient } from '@prisma/client/edge'
+import { PrismaClient } from "../../prisma/generated/client/edge"
+
 
 const prisma = new PrismaClient({
   datasources: {
@@ -9,3 +10,5 @@ const prisma = new PrismaClient({
 });
 
 export default prisma;
+
+ 

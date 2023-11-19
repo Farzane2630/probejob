@@ -1,39 +1,22 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import { fetchAndInsertJoke } from './Utils/chunckNorrisApi';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-
-interface JokeCardProps {
-  joke: string;
-}
-
-interface FooterProps {
-  visitCount: number;
-}
-
-const JokeCard: React.FC<JokeCardProps> = ({ joke }) => {
-  return (
-    <div className="p-4 border rounded-md">
-      <p>{joke}</p>
-    </div>
-  );
-};
-
-// const Footer: React.FC<FooterProps> = ({ visitCount }) => {
-//   return <footer className="text-center p-4">Visitors: {visitCount}</footer>;
-// };
+import Header from './lib/Header/Header';
+import Footer from './lib/Footer/Footer';
+import JokeCard from './lib/JokeCard/JokeCard';
+import Image from 'next/image';
 
 const Home: React.FC = () => {
   const [joke, setJoke] = useState<string>('');
   const [visitCount, setVisitCount] = useState<number>(0);
 
   useEffect(() => {
-    // Fetch Chuck Norris joke and update state
+    // Fetch random joke and update state
     fetchAndInsertJoke()
-      .then((joke) =>setJoke( joke.value))
-      
+      .then((joke) => setJoke(joke.value))
+
   }, []);
+
 
   const handleGetAnotherJoke = async () => {
     try {
@@ -45,13 +28,19 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto my-8">
+    <div
+      className="w-full min-h-screen flex flex-col justify-between items-stretch relative">
       <Header />
-      {/* <h1 className="text-4xl font-bold mb-4">Chuck Norris Jokes</h1> */}
-      <JokeCard joke={joke} />
-      <button onClick={handleGetAnotherJoke} className="mt-4 p-2 bg-blue-500 text-white rounded-md">
-        Get Another Joke
-      </button>
+      <div className="w-full h-full flex flex-col justify-start items-center md:flex-row md:justify-center md-items-start md:space-x-16">
+        <Image
+          src="/images/coder.jpg"
+          width={500}
+          height={500}
+          alt="W & S agentur home"
+          priority
+          placeholder={`data:image/${'W&S'}`} />
+        <JokeCard joke={joke} handleGetAnotherJoke={handleGetAnotherJoke} />
+      </div>
       <Footer visitCount={visitCount} />
     </div>
   );

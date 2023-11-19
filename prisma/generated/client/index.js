@@ -91,11 +91,6 @@ exports.Prisma.JokeScalarFieldEnum = {
   value: 'value'
 };
 
-exports.Prisma.VisitScalarFieldEnum = {
-  id: 'id',
-  timestamp: 'timestamp'
-};
-
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -108,8 +103,7 @@ exports.Prisma.NullsOrder = {
 
 
 exports.Prisma.ModelName = {
-  Joke: 'Joke',
-  Visit: 'Visit'
+  Joke: 'Joke'
 };
 /**
  * Create the Client
@@ -158,8 +152,8 @@ const config = {
       }
     }
   },
-  "inlineSchema": "ZGF0YXNvdXJjZSBkYiB7CiAgcHJvdmlkZXIgPSAic3FsaXRlIgogIHVybCAgICAgID0gImZpbGU6Li9kZXYuZGIiCn0KCmdlbmVyYXRvciBjbGllbnQgewogIHByb3ZpZGVyID0gInByaXNtYS1jbGllbnQtanMiCiAgb3V0cHV0ICAgPSAiLi9nZW5lcmF0ZWQvY2xpZW50Igp9Cgptb2RlbCBKb2tlIHsKICBpZCAgICAgICBTdHJpbmcgIEBpZCBAbWFwKCJfaWQiKQogIGljb25VcmwgIFN0cmluZwogIHVybCAgICAgIFN0cmluZz8KICB2YWx1ZSAgICBTdHJpbmcKfQoKbW9kZWwgVmlzaXQgewogIGlkICAgICAgICBJbnQgICAgICBAaWQgQGRlZmF1bHQoYXV0b2luY3JlbWVudCgpKQogIHRpbWVzdGFtcCBEYXRlVGltZSBAZGVmYXVsdChub3coKSkKfQo=",
-  "inlineSchemaHash": "c4eb00f7e4e4fc27fd61ff0f38d3f7f684c07d40e8313e6c394e72249e2a883e",
+  "inlineSchema": "ZGF0YXNvdXJjZSBkYiB7CiAgIHByb3ZpZGVyID0gInNxbGl0ZSIKICAgdXJsICAgICAgPSAiZmlsZTouL2Rldi5kYiIKIH0KIAogZ2VuZXJhdG9yIGNsaWVudCB7CiAgIHByb3ZpZGVyID0gInByaXNtYS1jbGllbnQtanMiCiAgIG91dHB1dCAgID0gIi4vZ2VuZXJhdGVkL2NsaWVudCIKIH0KIAogbW9kZWwgSm9rZSB7CiAgIGlkICAgICAgIFN0cmluZyAgQGlkIEBtYXAoIl9pZCIpCiAgIGljb25VcmwgIFN0cmluZwogICB1cmwgICAgICBTdHJpbmc/CiAgIHZhbHVlICAgIFN0cmluZwogfQ==",
+  "inlineSchemaHash": "e70f94588fe7d207b4e4ea6f55044e071dd6e649cb91378b11bff7c53b60576f",
   "noEngine": false
 }
 
@@ -180,7 +174,7 @@ if (!fs.existsSync(path.join(__dirname, 'schema.prisma'))) {
   config.isBundled = true
 }
 
-config.runtimeDataModel = JSON.parse("{\"models\":{\"Joke\":{\"dbName\":null,\"fields\":[{\"name\":\"id\",\"dbName\":\"_id\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":true,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"String\",\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"iconUrl\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"String\",\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"url\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":false,\"isUnique\":false,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"String\",\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"value\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"String\",\"isGenerated\":false,\"isUpdatedAt\":false}],\"primaryKey\":null,\"uniqueFields\":[],\"uniqueIndexes\":[],\"isGenerated\":false},\"Visit\":{\"dbName\":null,\"fields\":[{\"name\":\"id\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":true,\"isReadOnly\":false,\"hasDefaultValue\":true,\"type\":\"Int\",\"default\":{\"name\":\"autoincrement\",\"args\":[]},\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"timestamp\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":true,\"type\":\"DateTime\",\"default\":{\"name\":\"now\",\"args\":[]},\"isGenerated\":false,\"isUpdatedAt\":false}],\"primaryKey\":null,\"uniqueFields\":[],\"uniqueIndexes\":[],\"isGenerated\":false}},\"enums\":{},\"types\":{}}")
+config.runtimeDataModel = JSON.parse("{\"models\":{\"Joke\":{\"dbName\":null,\"fields\":[{\"name\":\"id\",\"dbName\":\"_id\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":true,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"String\",\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"iconUrl\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"String\",\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"url\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":false,\"isUnique\":false,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"String\",\"isGenerated\":false,\"isUpdatedAt\":false},{\"name\":\"value\",\"kind\":\"scalar\",\"isList\":false,\"isRequired\":true,\"isUnique\":false,\"isId\":false,\"isReadOnly\":false,\"hasDefaultValue\":false,\"type\":\"String\",\"isGenerated\":false,\"isUpdatedAt\":false}],\"primaryKey\":null,\"uniqueFields\":[],\"uniqueIndexes\":[],\"isGenerated\":false}},\"enums\":{},\"types\":{}}")
 defineDmmfProperty(exports.Prisma, config.runtimeDataModel)
 config.getQueryEngineWasmModule = undefined
 

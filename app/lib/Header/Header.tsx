@@ -10,11 +10,10 @@ function Header() {
         src="/images/weiseundstark_logo.jpg"
         width={100}
         height={50}
-        alt="Picture of the author"
+        alt="W & S agentur home"
         priority
-      />
-      {/* <img src="../../public/weiseundstark_logo.jpg" alt="W & S Agentur - home" className="logo" /> */}
-      </Link>
+        placeholder={`data:image/${'W&S'}`}
+      /> </Link>
     </header>
   )
 }
