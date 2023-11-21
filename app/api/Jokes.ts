@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { fetchAndInsertJoke } from "../Utils/chunckNorrisApi"
+import { fetchAndInsertJoke } from "../Utils/chunckNorrisApi/chunckNorrisApi"
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {

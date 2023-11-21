@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import { fetchAndInsertJoke } from './Utils/chunckNorrisApi';
+import { fetchAndInsertJoke } from './Utils/chunckNorrisApi/chunckNorrisApi';
 import Header from './lib/Header/Header';
 import Footer from './lib/Footer/Footer';
 import JokeCard from './lib/JokeCard/JokeCard';

@@ -8,7 +8,7 @@ const JokeCard = ({ joke, handleGetAnotherJoke }: { joke: string, handleGetAnoth
         <div className="flex flex-row justify-start">
           <StartTag />
         </div>
-        <p className='p-8 min-w-inherit text-lg font-mono font-semibold'>{joke}</p>
+        <p data-testid="joke" className='p-8 min-w-inherit text-lg font-mono font-semibold'>{joke}</p>
 
         <div className="flex flex-row justify-end">
           <EndTag />
@@ -17,6 +17,7 @@ const JokeCard = ({ joke, handleGetAnotherJoke }: { joke: string, handleGetAnoth
       <button
         className="mt-4 p-2 bg-black text-white hover:border font-mono hover:border-solid rounded-md hover:bg-white hover:text-black transition-colors duration-300"
         onClick={handleGetAnotherJoke}
+        data-testid="btn"
       >
         Get Another Joke
       </button>

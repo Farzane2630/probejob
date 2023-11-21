@@ -111,6 +111,12 @@ exports.Prisma.JokeScalarFieldEnum = {
   value: 'value'
 };
 
+exports.Prisma.VisitorScalarFieldEnum = {
+  id: 'id',
+  ipAddress: 'ipAddress',
+  createdAt: 'createdAt'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -123,7 +129,8 @@ exports.Prisma.NullsOrder = {
 
 
 exports.Prisma.ModelName = {
-  Joke: 'Joke'
+  Joke: 'Joke',
+  Visitor: 'Visitor'
 };
 
 /**

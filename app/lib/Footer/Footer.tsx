@@ -10,7 +10,7 @@ const Footer: React.FC<FooterProps> = ({ visitCount }) => {
       <div className="visit-box text-white font-mono">
       We've got {visitCount} visitors until now!
       </div>
-      <div className="text-white font-mono">
+      <div className="text-white font-mono" data-testid="footer">
          Made with <span className='text-red-500'>❤</span> by Farzaneh
       </div>
     </div>
