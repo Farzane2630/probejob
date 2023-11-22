@@ -122,7 +122,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\farzane\\OneDrive\\Desktop\\best works\\probejob\\prisma\\generated\\client",
+      "value": "C:\\Users\\farzane\\OneDrive\\Desktop\\probejob\\prisma\\generated\\client",
       "fromEnvVar": null
     },
     "config": {
@@ -158,8 +158,8 @@ const config = {
       }
     }
   },
-  "inlineSchema": "ZGF0YXNvdXJjZSBkYiB7DQogICBwcm92aWRlciA9ICJzcWxpdGUiDQogICB1cmwgICAgICA9ICJmaWxlOi4vZGV2LmRiIg0KIH0NCiANCiBnZW5lcmF0b3IgY2xpZW50IHsNCiAgIHByb3ZpZGVyID0gInByaXNtYS1jbGllbnQtanMiDQogICBvdXRwdXQgICA9ICIuL2dlbmVyYXRlZC9jbGllbnQiDQogfQ0KIA0KIG1vZGVsIEpva2Ugew0KICAgaWQgICAgICAgU3RyaW5nICBAaWQgQG1hcCgiX2lkIikNCiAgIGljb25VcmwgIFN0cmluZw0KICAgdXJsICAgICAgU3RyaW5nPw0KICAgdmFsdWUgICAgU3RyaW5nDQogfQ0KDQogbW9kZWwgVmlzaXRvciB7DQogIGlkICAgICAgICBJbnQgICAgICBAaWQgQGRlZmF1bHQoYXV0b2luY3JlbWVudCgpKQ0KICBpcEFkZHJlc3MgU3RyaW5nDQogIGNyZWF0ZWRBdCBEYXRlVGltZSBAZGVmYXVsdChub3coKSkNCn0=",
-  "inlineSchemaHash": "464fb52d7069b4042360dc414b976eff05080f4dc0aec4f6a49c87183a5e07f6",
+  "inlineSchema": "ZGF0YXNvdXJjZSBkYiB7CiAgIHByb3ZpZGVyID0gInNxbGl0ZSIKICAgdXJsICAgICAgPSAiZmlsZTouL2Rldi5kYiIKIH0KIAogZ2VuZXJhdG9yIGNsaWVudCB7CiAgIHByb3ZpZGVyID0gInByaXNtYS1jbGllbnQtanMiCiAgIG91dHB1dCAgID0gIi4vZ2VuZXJhdGVkL2NsaWVudCIKIH0KIAogbW9kZWwgSm9rZSB7CiAgIGlkICAgICAgIFN0cmluZyAgQGlkIEBtYXAoIl9pZCIpCiAgIGljb25VcmwgIFN0cmluZwogICB1cmwgICAgICBTdHJpbmc/CiAgIHZhbHVlICAgIFN0cmluZwogfQoKIG1vZGVsIFZpc2l0b3IgewogIGlkICAgICAgICBJbnQgICAgICBAaWQgQGRlZmF1bHQoYXV0b2luY3JlbWVudCgpKQogIGlwQWRkcmVzcyBTdHJpbmcKICBjcmVhdGVkQXQgRGF0ZVRpbWUgQGRlZmF1bHQobm93KCkpCn0=",
+  "inlineSchemaHash": "b572536cb1c1eb5c613574d9607dc97798794c5a6d56d0b261ec9b5a63dab5a9",
   "noEngine": false
 }
 config.dirname = '/'
