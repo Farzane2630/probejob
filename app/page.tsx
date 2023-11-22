@@ -18,8 +18,6 @@ const Home: React.FC = () => {
 
   }, []);
 
-
-
   const handleGetAnotherJoke = async () => {
     try {
       const insertedJoke = await fetchAndInsertJoke();
