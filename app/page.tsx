@@ -4,7 +4,8 @@ import { fetchAndInsertJoke } from './Utils/chunckNorrisApi/chunckNorrisApi';
 import Header from './lib/Header/Header';
 import Footer from './lib/Footer/Footer';
 import JokeCard from './lib/JokeCard/JokeCard';
-import Image from 'next/image';
+import Image from 'next/image'; 
+
 
 const Home: React.FC = () => {
   const [joke, setJoke] = useState<string>('');
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
       .then((joke) => setJoke(joke.value))
 
   }, []);
+
 
 
   const handleGetAnotherJoke = async () => {
